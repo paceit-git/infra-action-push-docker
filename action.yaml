@@ -13,6 +13,13 @@ inputs:
   image_tag:
     description: 'Docker Image Tag'
     required: true
+  gcr_project_id:
+    description: 'google project Id'
+    required: true
+  working_dir:
+    description: 'the directory to look the docker file in'
+    required: false
+    default: '.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
